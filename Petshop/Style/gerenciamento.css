@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+
+  min-height: 100vh;
+}
+
+.navbar {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+/* Sidebar fixa */
+.sidebar {
+  width: 220px;
+  background: #f5f5f5;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin-top: 68px;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.sidebar li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.sidebar .active a {
+  font-weight: bold;
+
+}
+
+.sidebar li:hover{
+  background-color: #ddd;
+}
+
+/* Conteúdo da página */
+.content {
+  margin-left: 220px;
+  padding: 20px;
+  width: 80%;
+}
+
+
+.info-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.actions button {
+  margin-left: 10px;
+  padding: 6px 12px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fdfdf1;
+}
+
+th, td {
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+
+
+.main-content {
+  margin-top: 20px;
+  padding: 40px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+
